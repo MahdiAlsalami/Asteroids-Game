@@ -1,5 +1,4 @@
 from circleshape import CircleShape
-import constants 
 from constants import *
 import pygame
 
@@ -33,4 +32,4 @@ class Player(CircleShape):
 
     def move(self, dt):
         forward = pygame.Vector2(0, 1).rotate(self.rotation)
-        self.position += forward * PLAYER_SPEED * dt
+        self.position += forward * PLAYER_SPEED * dt 
